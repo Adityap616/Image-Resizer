@@ -1,0 +1,20 @@
+Electron allows in development of cross-platform desktop applications using JS,HTML and CSS.
+1)Entry point - main.js as there is a main process that runs in Electron
+2)Add productName in package.json 
+3) Install follwing packages:
+	Electron
+	resize-img
+	toastify-js (provides toast notifcation/alerts)
+4) touch main.js to create the file
+5) change start script to "start" : "electron ." where the dot means the home directory
+6)npm start - this will run the main.js as a nodeJS process
+
+Electron uses Chromium under the hood
+
+npx electronmon . --> nodemon equivalent in Electron
+
+7) to fix security issues
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'"/>
+
+Renderer - UI
+Main - Process
